@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { createCase, deleteCase } from '../services/db';
 
 export default function CaseManager({ selectedFeatureId, cases, reload }) {
-  const [title, setTitle] = useState('Case 1: source-grounded answer');
-  const [input, setInput] = useState('User asks the AI feature a question where the answer must be grounded in supplied sources.');
-  const [expectedOutput, setExpectedOutput] = useState('The output should answer the user, cite or refer to the supplied source, avoid unsupported claims, and mention uncertainty when evidence is insufficient.');
-  const [notes, setNotes] = useState('Expected answer written before running the feature.');
+  const [title, setTitle] = useState('Join customers and orders');
+  const [input, setInput] = useState('Show me all customers who spent more than $1000 in 2023.');
+  const [expectedOutput, setExpectedOutput] = useState("SELECT * FROM customers JOIN orders ON customers.id = orders.customer_id WHERE orders.amount > 1000 AND orders.date BETWEEN '2023-01-01' AND '2023-12-31';");
+  const [notes, setNotes] = useState('Tests JOIN query and date range filter.');
 
   async function onCreate() {
     if (!selectedFeatureId) return alert('Select a feature first.');

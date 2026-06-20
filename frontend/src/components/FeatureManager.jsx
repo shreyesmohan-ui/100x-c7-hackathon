@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { createFeature, deleteFeature, createCase, upsertRubric } from '../services/db';
 
 export default function FeatureManager({ features, selectedFeatureId, setSelectedFeatureId, reload }) {
-  const [name, setName] = useState('NCCN RAG Answerer');
-  const [description, setDescription] = useState('Answers clinical workflow questions from source documents and FHIR context.');
+  const [name, setName] = useState('SQL Query Generator');
+  const [description, setDescription] = useState('Translates natural language questions into valid PostgreSQL queries.');
   const [seeding, setSeeding] = useState(false);
 
   async function onCreate() {
