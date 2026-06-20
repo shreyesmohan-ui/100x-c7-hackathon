@@ -163,6 +163,8 @@ VITE_API_BASE_URL=http://localhost:8000
 
 Use `render.yaml` for Blueprint deployment, or deploy manually.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/shreyesmohan-ui/100x-c7-hackathon)
+
 ### Backend Web Service
 
 - Root directory: `backend`
