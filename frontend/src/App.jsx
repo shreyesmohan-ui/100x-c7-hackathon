@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import AuthView from './components/AuthView';
 import CaseManager from './components/CaseManager';
