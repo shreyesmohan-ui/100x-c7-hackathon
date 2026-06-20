@@ -18,4 +18,4 @@ If 0 out of 2 builders change a prompt, guardrail, retrieval rule, schema constr
 2026-06-20 16:27 IST
 
 ## First commit link
-PASTE GITHUB COMMIT LINK HERE
+https://github.com/shreyesmohan-ui/100x-c7-hackathon/commit/90adaa65ca453923d3f3a0e63e27772348b6df11
